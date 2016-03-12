@@ -1,0 +1,186 @@
+/*-------------------------------
+General settings
+---------------------------------*/
+body {
+	background-color: #F2F2F2;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	color: #000;
+	width: 100%;
+}
+html, p, body {
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+}
+
+.menu {
+	width: 32px;
+	height: 32px;
+	position: fixed;
+	top: 20px;
+	left: 20px;
+}
+.arrow_back {
+	width: 30px;
+	height: 30px;
+	position: fixed;
+	top: 40px;
+	left: 20px;
+}
+.arrow_back a {
+	opacity: 0.7;
+}
+.arrow_back a:hover {
+	opacity: 1;
+}
+.arrow_back-item {
+	width: 75%;
+	margin-left: 4px;
+}
+
+/*-------------------------------
+Accueil
+---------------------------------*/
+.header_content {
+	margin-top: 15%;
+	text-align: center;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+.header_content img {
+	width: 40%;
+}
+.navigation {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.navigation a {
+	margin: 0 4%;
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 14px;
+	opacity: 0.7;
+}
+.navigation a:hover {
+	color: #000;
+	opacity: 1;
+}
+
+/*-------------------------------
+Albums
+---------------------------------*/
+.header_content_gallery {
+	margin-top: 2%;
+	text-align: center;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+.header_content_gallery img {
+	width: 40%;
+}
+.gallery_container {
+	width: 80%;
+	margin-top: 4%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 4%;
+	display: block;
+}
+.gallery_thumbnail {
+	display: inline-block;
+	width: 40%;
+	margin-left: 5%;
+	margin-top: 3%;
+}
+.gallery_thumbnail img {
+	width: 100%;
+	border: solid #fff 4px;
+}
+
+/*-------------------------------
+Galerie
+---------------------------------*/
+.logo_gallery {
+	margin-top: 2%;
+	text-align: center;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+.content_text h2 {
+	font-size: 50px;
+	margin-bottom: 1%;
+}
+.content_text {
+	margin-left: 14%;
+	line-height: 1.5;
+}
+.content_text p {
+	margin-bottom: 0;
+}
+.gallery_content {
+	margin-top: 0;
+}
+
+/*-------------------------------
+Albums
+---------------------------------*/
+.contact_content {
+	text-align: center;
+	font-size: 24px;
+}
+.contact_tel {
+	letter-spacing: 2px;
+}
+
+/*-------------------------------
++ Media queries
+---------------------------------*/
+
+/* Tablet screen (968px) */
+@media (max-width:979px) {
+	.gallery_container {
+		margin-left: 20%;
+	}
+	.gallery_thumbnail {
+		width: 60%;
+	}
+	.header_content img {
+		width: 60%;
+	}
+}
+
+/* Tablet screen (768px) */
+@media (max-width:768px) {
+	.gallery_container {
+		width: 80%;
+	}
+	.gallery_thumbnail {
+	}
+}
+
+/* Mobile screen (480px) */
+@media (max-width:480px) {
+	.header_content {
+		margin-top: 50%;
+	}
+	.home_content a {
+		margin: 0 4%;
+	}
+	.gallery_container {
+		margin-left: 6%;
+		width: 90%;
+	}
+	.gallery_thumbnail {
+		width: 100%;
+	}
+	.header_content img {
+		width: 90%;
+	}
+}
