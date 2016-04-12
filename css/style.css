@@ -15,8 +15,11 @@ html, p, body {
 }
 
 p {
-	font-family: 'Lato', sans-serif;
-	font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #333;
+    font-weight: 300;
+    letter-spacing: 0.5px;
 }
 
 .menu {
@@ -57,9 +60,24 @@ Accueil
 	width: 40%;
 }
 .navigation {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 	text-align: center;
 	margin-bottom: 20px;
 }
+
+.navigation.albums a,
+.navigation.galeries a {
+	color: #000;
+	opacity: 0.7;
+}
+
+.navigation.albums a:hover,
+.navigation.galeries a:hover {
+	color: #000;
+	opacity: 1;
+}
+
 .navigation a {
 	margin: 0 4%;
 	text-decoration: none;
@@ -67,10 +85,10 @@ Accueil
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 14px;
-	opacity: 0.7;
+	opacity: 0.8;
 }
 .navigation a:hover {
-	color: #333;
+	color: #fff;
 	opacity: 1;
 }
 
@@ -115,8 +133,11 @@ Galerie
 	text-transform: uppercase;
 }
 .content_text h2 {
-	font-size: 50px;
-	margin-bottom: 1%;
+    font-size: 25px;
+    margin-bottom: 1%;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .content_text {
 	margin-left: 14%;
@@ -215,6 +236,7 @@ body { height: 100%; }
   -webkit-animation: imageAnimation 8s linear infinite 0s;
   -moz-animation: imageAnimation 9s linear infinite 0s;
   animation: imageAnimation 8s linear infinite 0s;
+  animation-iteration-count: infinite;
 }
 
 .slideshow li:nth-child(1) span { 
@@ -233,13 +255,6 @@ body { height: 100%; }
 	-webkit-animation-delay: 10s;
 	-moz-animation-delay: 10s;
 	animation-delay: 10s;
-}
-
-.slideshow li:nth-child(4) span {
-	background-image: url(../images/05.jpg);
-	-webkit-animation-delay: 15s;
-	-moz-animation-delay: 15s;
-	animation-delay: 15s;
 }
  
 @-webkit-keyframes imageAnimation {  
